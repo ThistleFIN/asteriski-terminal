@@ -2,7 +2,7 @@
 
 Terminal style website for Asteriski ry's members. Based on m4tt72's terminal website;
 
-![screenshot](/docs/screenshot.png)
+![screenshot](/docs/Screenshot_3.png)
 
 ## Quick Start
 ### Using npm
