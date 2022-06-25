@@ -19,18 +19,6 @@ export const date = async (args: string[]): Promise<string> => {
   return new Date().toString();
 };
 
-export const gui = async (args: string[]): Promise<string> => {
-  window.open('https://m4tt72.com', '_self');
-
-  return 'Opening GUI version...';
-};
-
-export const email = async (args: string[]): Promise<string> => {
-  window.open('mailto:hi@nm4tt72.com');
-
-  return 'Opening mailto:hi@m4tt72.com...';
-};
-
 export const vi = async (args: string[]): Promise<string> => {
   return `why use vi? try 'emacs'.`;
 };
@@ -59,28 +47,87 @@ export const repo = async (args?: string[]): Promise<string> => {
   return 'Opening repository...';
 };
 
-export const donate = async (args?: string[]): Promise<string> => {
-  window.open(packageJson.funding.url, '_blank');
-
-  return 'Opening donation url...';
-};
-
 export const banner = (args?: string[]): string => {
   return `
-███╗   ███╗██╗  ██╗████████╗████████╗███████╗██████╗
-████╗ ████║██║  ██║╚══██╔══╝╚══██╔══╝╚════██║╚════██╗
-██╔████╔██║███████║   ██║      ██║       ██╔╝ █████╔╝
-██║╚██╔╝██║╚════██║   ██║      ██║      ██╔╝ ██╔═══╝
-██║ ╚═╝ ██║     ██║   ██║      ██║      ██║  ███████╗
-╚═╝     ╚═╝     ╚═╝   ╚═╝      ╚═╝      ╚═╝  ╚══════╝ v${packageJson.version}
+
+               ========        ========
+                =******=      =******=
+                 =******=    =******=
+                  =******=  =******=
+                   =******==******=
+                    =************=
+            =========***********==========
+            =****************************=
+            =****************************=
+            =========************=========
+                    =************=
+                  =*******==******=
+                 =*******=  =******=
+                =*******=    =*******=
+               =*******=      =*******=
+              =========        ========= v${packageJson.version}
 
 Type 'help' to see list of available commands.
 
---
-The project is open-source 🎉 type 'repo' to check out the repository.
+Few example commands:
+theme
+server_info
+members_sites
 
-New 🎉: Try out the new 'theme' command. See all available themes <a href="https://github.com/m4tt72/terminal/tree/master/docs/themes">in the docs</a>.
-New 🎉: New command 'neofetch', for you linux.
 --
+Welcome to Asteriski ry's website for members server! 🎉
+You have arrived to the web page, which for example contains the instructions on how to get to the actual server and links to members own projects.
+
+To get access to the actual server, please contact Asteriski's current Server Wizard (2022: Roosa Virta, rhvirt@utu.fi.
+--
+`;
+};
+
+export const server_info = (args?: string[]): string => {
+  return `
+┌─────────────────────────────────────────────────┐
+│   Asteriski's members server                    │
+├─────────────────────────────────────────────────┤
+│ Host name: members.asteriski.fi                 │
+│ Server location: Helsinki, Finland              │
+│ ISP: Hetzner Online GmbH                        │
+│                                                 │
+│                                                 │
+│ Server Wizard: Roosa Virta rhvirt@utu.fi        │
+│ Applications: irssi, weechat, tmux, screen      │
+│ Games: typespeed, nethack, nInvaders, nsnake    │
+│ bastet, pacman4console                          │
+│                                                 │
+│ To host a site, create a "public_html" -folder  |
+| to you home folder and add index.html to it. For|
+| example makstu/public_html/index.html, can be   |
+| seen in:                                        │
+│ https://members.asteriski.fi/~makstu/           │
+└─────────────────────────────────────────────────┘
+
+`;
+};
+
+export const members_sites = (args?: string[]): string => {
+  return `
+┌─────────────────────────────────────────────────┐
+│   Asteriski's members sites                     │
+├─────────────────────────────────────────────────┤
+│ Nickname: makstu                                │
+│ Site: https://members.asteriski.fi/~makstu/     │
+| Description: Index page -example                │
+│                                                 │
+│ Nickname: rhvirt                                │
+│ Site: https://members.asteriski.fi/~rhvirt/     │
+| Description: Still unknown                      │
+│                                                 │
+│  ---------------------------------------------  │
+│ To host a site, create a "public_html" -folder  |
+| to you home folder and add index.html to it. For|
+| example makstu/public_html/index.html, can be   |
+| seen in:                                        │
+│ https://members.asteriski.fi/~makstu/           │
+└─────────────────────────────────────────────────┘
+
 `;
 };

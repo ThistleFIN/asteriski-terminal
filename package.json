@@ -1,19 +1,15 @@
 {
-  "name": "terminal",
-  "version": "2.13.0",
+  "name": "asteriski_terminal",
+  "version": "1.0.0",
   "license": "MIT",
   "author": {
-    "name": "Yassine Fathi",
-    "url": "https://m4tt72.com",
-    "email": "hi@m4tt72.com"
-  },
-  "funding": {
-    "type": "Paypal",
-    "url": "https://paypal.me/y4ss1n3"
+    "name": "Roosa Virta",
+    "url": "https://takiainen.fi",
+    "email": "asteriski@utu.fi"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/m4tt72/terminal"
+    "url": "https://github.com/ThistleFIN/asteriski-terminal"
   },
   "scripts": {
     "start": "next start",
@@ -22,8 +18,7 @@
     "next": "next",
     "preexport": "next build",
     "export": "next export",
-    "lint": "eslint .",
-    "prepare": "husky install"
+    "lint": "eslint ."
   },
   "dependencies": {
     "@m4tt72/matomo-tracker-react": "^0.6.2",
@@ -46,7 +41,6 @@
     "eslint-plugin-next": "^0.0.0",
     "eslint-plugin-prettier": "^4.0.0",
     "eslint-plugin-react": "^7.30.0",
-    "husky": "^8.0.1",
     "postcss": "^8.4.14",
     "prettier": "^2.6.2",
     "tailwindcss": "^3.0.24",
