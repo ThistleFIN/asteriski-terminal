@@ -78,7 +78,7 @@ members_sites
 Welcome to Asteriski ry's website for members server! 🎉
 You have arrived to the web page, which for example contains the instructions on how to get to the actual server and links to members own projects.
 
-To get access to the actual server, please contact Asteriski's current Server Wizard (2022: Roosa Virta, rhvirt@utu.fi.
+To get access to the actual server, please contact Asteriski's current Server Wizard (2022: Roosa Virta, rhvirt@utu.fi).
 --
 `;
 };
