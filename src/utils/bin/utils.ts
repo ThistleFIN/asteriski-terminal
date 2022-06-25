@@ -41,7 +41,7 @@ export const sudo = async (args?: string[]): Promise<string> => {
 
 export const repo = async (args?: string[]): Promise<string> => {
   setTimeout(function () {
-    window.open('https://github.com/m4tt72/terminal', '_blank');
+    window.open('https://github.com/asteriskiry/asteriski-terminal', '_blank');
   }, 1000);
 
   return 'Opening repository...';
